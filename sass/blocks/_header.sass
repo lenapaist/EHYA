@@ -1,5 +1,6 @@
 .header
   max-height:  100px
+  margin-bottom: 69px
   &__block
     display: flex
     justify-content: space-between
@@ -19,7 +20,7 @@
         margin-left: 40px
         border: 2px solid $btn-color
         border-radius: 8px
-        padding: 13px 27px
+        padding: 11px 32px
         background-color: $bcr-color
         font-family: Open Sans
         font-style: normal
@@ -30,5 +31,10 @@
         cursor: pointer
     &-menu
       display: none
+  &__mobile
+    display: none
+    &--visible
+      display: flex
+      transition: 0.3s
 .logo
   margin: 36px 0

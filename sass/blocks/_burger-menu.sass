@@ -1,0 +1,58 @@
+svg 
+  height: 50px
+  position: absolute
+  width: 50px
+.plate
+  height: 50px
+  width: 50px
+  z-index: 11
+  cursor: pointer
+  margin-right: -12px
+  &__burger
+    filter: url(#gooeyness)
+    &-line 
+      fill: none
+      stroke: black
+      stroke-width: 4px
+      stroke-linecap: round
+      stroke-linejoin: round
+      transform-origin: 50%
+      transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms
+    &-line2
+      stroke-dasharray: 40 200
+      stroke-dashoffset: 0px
+    &-line3
+      stroke-dasharray: 40 179
+      stroke-dashoffset: 0px
+  &__x 
+    transform: scale(0)
+    transition: transform 400ms
+    &-line
+      fill: none
+      stroke: black
+      stroke-width: 4px
+      stroke-linecap: round
+      stroke-linejoin: round
+      transform-origin: 50%
+      transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms
+.active 
+  .plate
+    &__burger
+      &-line
+        transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms
+      &-line1
+        transform: scale(0, 1)
+        transition: transform 500ms 100ms
+        stroke-width: 4px
+      &-line2
+        stroke-dasharray: 5px 200
+        stroke-dashoffset: -164px
+      &-line3
+        stroke-dasharray: 5px 179
+        stroke-dashoffset: -142px
+    &__x
+      transform: scale(1)
+      transition: transform 400ms 350ms
+      stroke-width: 2.5px
+
+  
