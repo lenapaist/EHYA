@@ -10,6 +10,34 @@
       max-width: 400px
     &__title
       margin-top: 0
+  .recommendation
+    &__block
+      display: flex
+      flex-wrap: wrap
+      max-width: 960px
+      width: 100%
+    &__books
+      margin: 0 auto
+      margin-bottom: 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      text-align: center
+    &__top
+      width: 100%
+      display: flex
+      align-items: center
+      flex-direction: column
+      &__block
+        max-width: 750px
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+    &__line
+      max-width: 750px
+
+
 @media (min-width: 768px)
   .plate
     display: none
@@ -28,7 +56,10 @@
       margin-right: 0
     &__button
       margin-bottom: 36px
-      
+  .recommendation
+    &__btn
+      text-transform: capitalize
+      padding: 14px 282px
     
 
 @media (max-width: 768px)
@@ -47,7 +78,6 @@
           background-color: $bcr-color
           cursor: pointer
     &__mobile
-      // display: flex
       width: 100%
       position: fixed
       top: 0
@@ -66,6 +96,83 @@
       &-item
         margin-right: 0
         margin-bottom: 10px
+  .book
+    margin-bottom: 58px
+  .recommendation
+    margin-bottom: 56px
+    &__title
+      margin-bottom: 72px
+      font-size: 28px
+      line-height: 36px
+      &--mb
+        margin-bottom: 36px
+    &__cards
+      display: flex
+      flex-direction: column
+      width: 100%
+    &__card
+      display: none
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+      &:first-child
+        max-width: 280px
+        width: 100%
+        display: flex
+    &__image
+      margin-top: -37px
+      width: 95px
+      height: 137px
+      margin-right: -4px
+      margin-bottom: 20px
+    &__name
+      font-size: 20px
+      line-height: 24px
+      margin: 0 0 12px 0
+    &__type
+      font-size: 14px
+      line-height: 20px
+      margin: 0 0 16px 4px
+    &__price
+      font-size: 16px
+      line-height: 20px
+      margin-right: 19px
+      margin: 0 0 19px -7px
+    &__button
+      margin-bottom: 15px
+    &__buy
+      margin-left: 40px
+      padding: 7px 26px
+    &__btn
+      padding: 13px 62px
+      margin-bottom: 28px
+    &__line
+      margin-bottom: 23px
+    &__top
+      &__block
+        max-width: 290px
+      &__name
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 24px
+        margin-top: 5px
+        margin-bottom: -7px
+      &__price
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 14px
+    &__image
+      &__top
+        width: 95px
+        height: 142px
+        margin-right: 14px
+        margin-left: -11px
 
 
 @media (max-width: 576px)
