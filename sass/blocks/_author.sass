@@ -3,6 +3,7 @@
   display: flex
   align-items: center
   flex-direction: column
+  margin-bottom: 100px
   &__container
     max-width: 1005px
     width: 100%
@@ -44,37 +45,37 @@
       display: flex
       justify-content: space-between
       align-items: center
-      &--desc
-        font-family: Open Sans
-        font-style: normal
-        font-weight: normal
-        font-size: 16px
-        line-height: 22px
-        color: #5A7184
-    &--big
+    &-big
       display: flex
       align-items: center
       margin-bottom: 30px
-    &--small
+    &-small
       display: flex
       justify-content: space-between
-    &--next
+    &-next
       display: flex
       align-items: center
       justify-content: center
       flex-direction: column
       margin-bottom: 22px
+  &-desc
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184
 .video
-  &__big
+  &-big
     position: relative
     max-width: 1005px
     width: 100%
-  &__play
+  &-play
     position: absolute
     left: 47%
     cursor: pointer
-    &--sm
+    &-sm
       position: absolute
       cursor: pointer
-  &__small
+  &-small
     position: relative
