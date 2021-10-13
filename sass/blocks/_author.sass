@@ -1,0 +1,80 @@
+.author
+  margin: 0 auto
+  display: flex
+  align-items: center
+  flex-direction: column
+  &__container
+    max-width: 1005px
+    width: 100%
+  &__info
+    max-width: 977px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+  &__title
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: $title-color
+  &__description
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: #5A7184
+    max-width: 383px
+    width: 100%
+    text-align: left
+    margin-right: 4px
+  &__video
+    &__block
+      flex-direction: column
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      color: $title-color
+      margin-bottom: 10px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &--desc
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+    &--big
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+    &--small
+      display: flex
+      justify-content: space-between
+    &--next
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      margin-bottom: 22px
+.video
+  &__big
+    position: relative
+    max-width: 1005px
+    width: 100%
+  &__play
+    position: absolute
+    left: 47%
+    cursor: pointer
+    &--sm
+      position: absolute
+      cursor: pointer
+  &__small
+    position: relative

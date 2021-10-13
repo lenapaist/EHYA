@@ -9,6 +9,11 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
@@ -376,7 +381,228 @@
                 </div>
             </div>
         </section>
+        <section class="slider">
+            <div class="container container__slider">
+                <div class="slider__button--prev">
+                    <img src="./img/prevRow.svg" alt="" />
+                </div>
+                <div class="slider__button--next">
+                    <img src="./img/nextRow.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="./img/slide1.svg"
+                                alt="Icon: Бизнес"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Бизнес & Финансы</span>
+                            <span class="slide__description"
+                                >Книги про мир бизнеса</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="img/slide2.svg"
+                                alt="Icon: Самомотивация"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Самомотиватия</span>
+                            <span class="slide__description"
+                                >Книги о мотивации</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="./img/slide3.svg"
+                                alt="Icon: Романы"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Романы Теленовеллы</span>
+                            <span class="slide__description"
+                                >Книги с крутыми историями</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="./img/slide4.svg"
+                                alt="Icon: Навыки"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Навыки будущего</span>
+                            <span class="slide__description"
+                                >Книги для самоподготовки
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="img/slide2.svg"
+                                alt="Icon: Самомотивация"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Самомотиватия</span>
+                            <span class="slide__description"
+                                >Книги о мотивации</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="unpublished">
+            <div class="container">
+                <div class="unpublished__block">
+                    <div class="unpublished__title">Неизданные книги</div>
+                    <div class="unpublished__books">
+                        <img
+                            src="./img/unpublished1.png"
+                            alt="Book"
+                            class="unpublished__image"
+                        />
+                        <img
+                            src="./img/unpublished2.png"
+                            alt="Book"
+                            class="unpublished__image"
+                        />
+                        <img
+                            src="./img/unpublished3.png"
+                            alt="Book"
+                            class="unpublished__image"
+                        />
+                        <img
+                            src="./img/unpublished4.png"
+                            alt="Book"
+                            class="unpublished__image"
+                        />
+                        <img
+                            src="./img/unpublished5.png"
+                            alt="Book"
+                            class="unpublished__image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="author">
+            <div class="author__container">
+                <div class="author__info">
+                    <div class="author__title">История Автора</div>
+                    <div class="author__description">
+                        Это раздел авторского рассказа. Каждую неделю мы
+                        стараемся рассказать вам историю писателя. Расскажем
+                        всем о закулисье их книг.
+                    </div>
+                </div>
+                <div class="author__video">
+                    <div class="author__video--big" id="player">
+                        <script src="https://www.youtube.com/iframe_api"></script>
+                        <img
+                            class="video__big"
+                            src="./img/video1.png"
+                            alt="Image: video preview"
+                        />
+                        <img
+                            src="./img/play-big.svg"
+                            alt="Icon: play"
+                            class="video__play"
+                        />
+                    </div>
+                    <div id="playerSmall" class="author__video--small">
+                        <script src="https://www.youtube.com/iframe_api"></script>
+                        <div class="author__video__block">
+                            <div class="author__video--next">
+                                <img
+                                    class="video__small"
+                                    src="./img/video2.png"
+                                    alt="Image: video preview"
+                                />
+                                <img
+                                    src="./img/play-small.svg"
+                                    alt="Icon: play"
+                                    class="video__play--sm"
+                                />
+                            </div>
+                            <div class="author__video__title">
+                                Emelda Scandroot
+                                <img
+                                    class="favorites"
+                                    src="./img/favorites.svg"
+                                    alt="Icon: favorites"
+                                />
+                            </div>
+                            <div class="author__video__title--desc">
+                                Author of Books Tittle
+                            </div>
+                        </div>
+
+                        <div class="author__video__block">
+                            <div class="author__video--next">
+                                <img
+                                    class="video__small"
+                                    src="./img/video3.png"
+                                    alt="Image: video preview"
+                                />
+                                <img
+                                    src="./img/play-small.svg"
+                                    alt="Icon: play"
+                                    class="video__play--sm"
+                                />
+                            </div>
+                            <div class="author__video__title">
+                                Emelda Scandroot
+                                <img
+                                    class="favorites"
+                                    src="./img/favorites.svg"
+                                    alt="Icon: favorites"
+                                />
+                            </div>
+                            <div class="author__video__title--desc">
+                                Author of Books Tittle
+                            </div>
+                        </div>
+                        <div class="author__video__block">
+                            <div class="author__video--next">
+                                <img
+                                    class="video__small"
+                                    src="./img/video4.png"
+                                    alt="Image: video preview"
+                                />
+                                <img
+                                    src="./img/play-small.svg"
+                                    alt="Icon: play"
+                                    class="video__play--sm"
+                                />
+                            </div>
+                            <div class="author__video__title">
+                                Emelda Scandroot
+                                <img
+                                    class="favorites"
+                                    src="./img/favorites.svg"
+                                    alt="Icon: favorites"
+                                />
+                            </div>
+                            <div class="author__video__title--desc">
+                                Author of Books Tittle
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/main.js"></script>
+    <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 </html>
