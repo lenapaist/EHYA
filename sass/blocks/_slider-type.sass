@@ -1,12 +1,14 @@
-.container
-  &__slider
-    position: relative
+
 .slick 
   &-list 
     margin-right: -26px
+  &-disabled
+    opacity: 0.5
 .slider
+  &__container
+    position: relative
   &__button
-    &--prev,&--next
+    &-prev,&-next
       position: absolute
       box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
       width: 56px
@@ -19,16 +21,19 @@
       border-radius: 50%
       cursor: pointer
       z-index: 10
-      top: 50%
-    &--prev
+      bottom: 30%
+    &-prev
       left: -28px
-    &--next
+    &-next
       right: -28px
 .slide
   border-top: 1px solid rgba(236, 238, 242, 1)
   padding-top: 60px
   width: 100%
-  margin-bottom: 100px
+  margin-bottom: 20px
+  &-adaptive
+    width: 100%
+    margin-bottom: 100px
   &__card
     border: 1px solid rgba(236, 238, 242, 1)
     border-radius: 8px

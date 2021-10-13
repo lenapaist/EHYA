@@ -382,14 +382,81 @@
             </div>
         </section>
         <section class="slider">
-            <div class="container container__slider">
-                <div class="slider__button--prev">
+            <div class="container slider__container">
+                <div class="slider__button-prev">
                     <img src="./img/prevRow.svg" alt="" />
                 </div>
-                <div class="slider__button--next">
+                <div class="slider__button-next">
                     <img src="./img/nextRow.svg" alt="" />
                 </div>
-                <div class="slide">
+                <div class="slide carousel">
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="./img/slide1.svg"
+                                alt="Icon: Бизнес"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Бизнес & Финансы</span>
+                            <span class="slide__description"
+                                >Книги про мир бизнеса</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="img/slide2.svg"
+                                alt="Icon: Самомотивация"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Самомотиватия</span>
+                            <span class="slide__description"
+                                >Книги о мотивации</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="./img/slide3.svg"
+                                alt="Icon: Романы"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Романы Теленовеллы</span>
+                            <span class="slide__description"
+                                >Книги с крутыми историями</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="./img/slide4.svg"
+                                alt="Icon: Навыки"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Навыки будущего</span>
+                            <span class="slide__description"
+                                >Книги для самоподготовки
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__card">
+                            <img
+                                src="img/slide2.svg"
+                                alt="Icon: Самомотивация"
+                                class="slide__image"
+                            />
+                            <span class="slide__title">Самомотиватия</span>
+                            <span class="slide__description"
+                                >Книги о мотивации</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-adaptive">
                     <div>
                         <div class="slide__card">
                             <img
@@ -462,32 +529,81 @@
             <div class="container">
                 <div class="unpublished__block">
                     <div class="unpublished__title">Неизданные книги</div>
+                    <div class="unpublished__buttons">
+                        <div class="unpublished__button unpublished__button-prev"><img src="./img/slider2Prev.svg" alt=""></div>
+                        <div class="unpublished__button unpublished__button-next"><img src="./img/slider2Next.svg" alt=""></div>
+                    </div>
                     <div class="unpublished__books">
-                        <img
-                            src="./img/unpublished1.png"
-                            alt="Book"
-                            class="unpublished__image"
-                        />
-                        <img
-                            src="./img/unpublished2.png"
-                            alt="Book"
-                            class="unpublished__image"
-                        />
-                        <img
-                            src="./img/unpublished3.png"
-                            alt="Book"
-                            class="unpublished__image"
-                        />
-                        <img
-                            src="./img/unpublished4.png"
-                            alt="Book"
-                            class="unpublished__image"
-                        />
-                        <img
-                            src="./img/unpublished5.png"
-                            alt="Book"
-                            class="unpublished__image"
-                        />
+                        <div>
+                            <img
+                                src="./img/unpublished1.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/unpublished2.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/unpublished3.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                            </div>
+                        <div>
+                            <img
+                                src="./img/unpublished4.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                            </div>
+                        <div>
+                            <img
+                                src="./img/unpublished5.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/unpublished1.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/unpublished2.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/unpublished3.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                            </div>
+                        <div>
+                            <img
+                                src="./img/unpublished4.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                            </div>
+                        <div>
+                            <img
+                                src="./img/unpublished5.png"
+                                alt="Book"
+                                class="unpublished__image"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -514,12 +630,12 @@
                             src="./img/play-big.svg"
                             alt="Icon: play"
                             class="video-play"
+                            id="play"
                         />
                     </div>
-                    <div id="playerSmall" class="author__video-small">
-                        <script src="https://www.youtube.com/iframe_api"></script>
+                    <div class="author__video-small">
                         <div class="author__video__block">
-                            <div class="author__video-next">
+                            <div id="playerSmall" class="author__video-next">
                                 <img
                                     class="video-small"
                                     src="./img/video2.png"
@@ -529,6 +645,7 @@
                                     src="./img/play-small.svg"
                                     alt="Icon: play"
                                     class="video-play-sm"
+                                    id="play1"
                                 />
                             </div>
                             <div class="author__video__title">
@@ -545,7 +662,7 @@
                         </div>
 
                         <div class="author__video__block">
-                            <div class="author__video-next">
+                            <div id="playerSmall2" class="author__video-next">
                                 <img
                                     class="video-small"
                                     src="./img/video3.png"
@@ -555,6 +672,7 @@
                                     src="./img/play-small.svg"
                                     alt="Icon: play"
                                     class="video-play-sm"
+                                    id="play2"
                                 />
                             </div>
                             <div class="author__video__title">
@@ -570,7 +688,7 @@
                             </div>
                         </div>
                         <div class="author__video__block">
-                            <div class="author__video-next">
+                            <div id="playerSmall3" class="author__video-next">
                                 <img
                                     class="video-small"
                                     src="./img/video4.png"
@@ -580,6 +698,7 @@
                                     src="./img/play-small.svg"
                                     alt="Icon: play"
                                     class="video-play-sm"
+                                    id="play3"
                                 />
                             </div>
                             <div class="author__video__title">
@@ -699,6 +818,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-wrapper">
+                    <form class="form newsletter__subscribe" action="send.php" method="post">
+                        <h2 class="newsletter__title">Будь первым, кто узнает о наших акциях </h2>
+                        <div class="newsletter__form">
+                            <img src="./img/form.svg" alt="" class="newsletter__icon">
+                            <input
+                                type="email"
+                                class="newsletter__input"
+                                placeholder="Ваш Emaill"
+                                name="email"
+                                required
+                            />
+                            <button class="newsletter__button">Регистрация</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

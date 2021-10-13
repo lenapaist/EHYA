@@ -1,3 +1,12 @@
+@media (min-width: 768px)
+  .plate
+    display: none
+  .slide
+    &-adaptive
+      display: none
+  .slide
+    margin-bottom: 100px
+
 @media (max-width: 1200px)
   .header
     margin-bottom: 40px
@@ -51,7 +60,34 @@
       font-size: 16px
       line-height: 24px
 
+
+@media (max-width: 1024px)
+  .slick 
+    &-list 
+      margin-right: -126px
+  .slider
+    &__button
+      &-prev,&-next
+        width: 48px
+        height: 48px
+      &-prev
+        left: -24px
+      &-next
+        right: -24px
+  .author
+    &__video
+      &__block
+        &:nth-child(3)
+          display: none
+      &-small
+        justify-content: space-evenly
+      
+
+
 @media (max-width: 992px)
+  .slick 
+    &-list 
+      margin-right: -5px
   .container
       max-width: 720px
   .book
@@ -74,6 +110,33 @@
     
 
 @media (max-width: 768px)
+  .slick 
+    &-list 
+      margin-right: -87px
+  .slider
+    &__button
+      &-prev,&-next
+        bottom: -76px
+      &-prev
+        left: 35%
+      &-next
+        right: 35%
+  .slide
+    &__card
+      max-width: 140px
+      width: 100%
+      height: 182px
+    &__image
+      width: 36px
+      height: 36px
+      margin: 20px 0
+    &__title
+      font-size: 16px
+      text-align: center
+    &__description
+      font-size: 12px
+      text-align: center
+      max-width: 99px
   .container
       max-width: 560px
   .header
@@ -186,9 +249,31 @@
         margin-left: -11px
 
 
+@media (max-width: 645px)
+  .slick 
+    &-list 
+      margin-right: -20px
+  .slider
+    &__container
+      max-width: 300px
+      padding: 0 !important
+    &__button
+      &-prev
+        left: 25%
+      &-next
+        right: 25%
+
 @media (max-width: 576px)
+  .unpublished
+    &__block
+      max-width: 206px
+      margin: 0 auto
+      padding-bottom: 60px
+    &__buttons
+      top: 88%
+      right: 21px
   .container
-    margin: 0 20px
+    padding: 0 20px
   .header
     margin-bottom: 11px
   .logo
