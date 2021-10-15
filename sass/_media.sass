@@ -8,6 +8,23 @@
     margin-bottom: 100px
 
 @media (max-width: 1200px)
+  .partners
+    justify-content: space-between
+    flex-wrap: wrap
+    &__icon
+      justify-content: space-evenly
+  .newsletter
+    &-wrapper
+      border-radius: 0
+    .container
+      max-width: 100%
+      padding: 0
+    &__subscribe
+      padding: 20px 0
+      flex-direction: column
+    &__title
+      margin: 0
+      margin-bottom: 20px
   .header
     margin-bottom: 40px
   .container
@@ -59,6 +76,32 @@
     &__description
       font-size: 16px
       line-height: 24px
+  .author
+    &__container
+      max-width: 960px
+  .blog
+    &__news
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__info
+      justify-content: space-evenly
+    &__title
+      margin-bottom: 20px
+    &__success
+      margin-bottom: 40px
+  .footer
+    &-wrapper
+      justify-content: center
+    &__bottom
+      display: none
+    &__block
+      justify-content: space-between
+      &:first-child
+        margin-right: 0
+      &-width
+        align-self: center
+        order: 5
 
 
 @media (max-width: 1024px)
@@ -81,7 +124,7 @@
         &:nth-child(3)
           display: none
       &-small
-        justify-content: space-evenly
+        justify-content: space-between
       
 
 
@@ -109,9 +152,25 @@
       padding: 14px 282px
   .card
     max-width: 140px
-    
+  .author
+    &__container
+      max-width: 720px
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-bottom: 24px
+    &__description
+      text-align: center
+      margin-bottom: 35px
 
 @media (max-width: 768px)
+  .unpublished
+    &__block
+      .slick 
+        &-list 
+          margin-left: 29px
   .slide
     .slick 
       &-list 
@@ -197,6 +256,7 @@
         max-width: 280px
         width: 100%
         display: flex
+        margin: 0 auto
     &__image
       margin-top: -37px
       width: 95px
@@ -250,7 +310,99 @@
         height: 142px
         margin-right: 14px
         margin-left: -11px
-
+  .slide
+    border-top: none
+    padding-top: 10px
+  .author
+    &-desc
+      display: flex
+      justify-content: center
+      width: 100%
+      font-size: 12px
+      line-height: 20px
+    &__video
+      display: flex
+      flex-direction: column
+      &__block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        position: relative
+        &:first-child
+          margin-right: 20px
+        .favorites
+          position: absolute
+          bottom: -30px
+      &__title
+        display: flex
+        justify-content: center
+        font-size: 16px
+        line-height: 20px
+        width: 100%
+        text-align: center
+    &__container
+      padding: 0 10px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__description
+      font-size: 18px
+      line-height: 25px
+  .video
+    &-big
+      max-width: 100%
+      min-height: 300px
+      margin: 0 auto
+    &-play
+      width: 56px
+      height: 56px
+      &-sm
+        width: 21px
+        height: 27px
+    &-small
+      max-width: 100%
+      min-height: 140px
+  .favorites
+    width: 10px
+    height: 14px
+  .partners
+    &__image
+      margin: 0
+      &:nth-child(odd)
+        margin-right: 30px
+      &:nth-child(n+7)
+        display: none
+  .airbnb
+    margin-top: 20px
+  .uber
+    margin-top: 20px
+  .google
+    margin-top: 23px
+  .fitbit
+    margin-left: 60px
+  .netflix
+    margin-right: 10px
+  .blog
+    position: relative
+    padding-bottom: 81px
+    &__data
+      &__image
+        max-width: 250px
+        width: 100%
+        min-height: 90px
+        min-width: 90px
+        margin-right: 20px
+      &__info
+        min-width: 170px
+    &__success
+      margin-right: 0
+      &__image
+        width: 100%
+        min-height: 120px
+    &__info
+      a
+        position: absolute
+        bottom: 0
 
 @media (max-width: 645px)
   .slide
@@ -267,15 +419,57 @@
       &-next
         right: 25%
 
+
+        
 @media (max-width: 576px)
+  .modal
+    &__dialog
+      padding: 30px 40px
+      width: 95%
+      height: 95%
+      max-height: 350px
+    &__button
+      margin-bottom: 10px
+  .newsletter
+    &__icon
+      top: 26px
+    &__input
+      padding-bottom: 50px
+      padding-right: 20px
+    &__form
+      height: 112px
+      align-items: flex-end
+    &__button
+      position: relative
+      width: 100%
+      margin: 0 11px
+      margin-bottom: 12px
+      left: 0
+      right: 0
+    &__subscribe
+      align-items: flex-start
+      padding: 30px 20px
+    &__title
+      font-size: 28px
+      max-width: 188px
   .unpublished
     &__block
-      max-width: 206px
+      max-width: 222px
       margin: 0 auto
       padding-bottom: 60px
+      .slick
+        &-list
+          margin-left: 7px
+          margin-right: 0
     &__buttons
       top: 88%
-      right: 21px
+      right: 47px
+    &__title
+      font-size: 28px
+      linegin-bottom: 31px
+    &__image
+      max-width: 205px
+      width: 100%
   .container
     padding: 0 20px
   .header
@@ -312,3 +506,40 @@
         padding: 7px 27px
         font-size: 16px
         line-height: 22px
+  .author
+    &__video
+      &-next
+        margin-bottom: 16px
+      &__title
+        margin-bottom: 6px
+    &-desc
+      margin-bottom: 16px
+  .partners
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 29px
+    &__icon
+      padding-left: 0
+  .slack
+    max-width: 99px
+    margin-bottom: 22px
+  .netflix
+    max-width: 86px
+    margin-bottom: 23px
+  .fitbit
+    max-width: 87px
+    margin-bottom: 22px
+    margin-left: 0
+  .google
+    max-width: 86px
+    margin-bottom: 21px
+  .airbnb
+    max-width: 86px
+  .uber
+    max-width: 86px
+  
+
+  
+@media (max-width: 387px)
+  
