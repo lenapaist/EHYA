@@ -205,6 +205,26 @@ $(document).ready(function () {
             $("body").removeClass("hidden-scroll");
         }
     });
+    window.addEventListener("resize", (event) => {
+        if (body.width() <= 340) {
+            $(".video-big").attr("src", "./img/video1-mini.jpg");
+            $("#video-small").attr("src", "./img/video2-mini.jpg");
+            $("#video-small2").attr("src", "./img/video3-mini.jpg");
+        } else {
+            $(".video-big").attr("src", "./img/video1.png");
+            $("#video-small").attr("src", "./img/video2.png");
+            $("#video-small2").attr("src", "./img/video3.png");
+        }
+    });
+    if (body.width() <= 340) {
+        $(".video-big").attr("src", "./img/video1-mini.jpg");
+        $("#video-small").attr("src", "./img/video2-mini.jpg");
+        $("#video-small2").attr("src", "./img/video3-mini.jpg");
+    } else {
+        $(".video-big").attr("src", "./img/video1.png");
+        $("#video-small").attr("src", "./img/video2.png");
+        $("#video-small2").attr("src", "./img/video3.png");
+    }
     // Обработка форм
     form.each(function () {
         $(this).validate({
