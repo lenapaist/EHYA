@@ -15,7 +15,14 @@
             href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
         />
         <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     </head>
+    <div class="toTop">Наверх</div>
     <body>
         <header class="header">
             <div class="container">
@@ -28,14 +35,20 @@
                         />
                     </a>
                     <div class="header__block-info">
-                        <a href="#" class="header__block-info__text"
+                        <a
+                            href="#recommendation"
+                            class="header__block-info__text"
                             >Рекомендации</a
-                        ><a href="#" class="header__block-info__text">Книги</a
-                        ><a href="#" class="header__block-info__text">Блог</a>
-                        <a data-toggle="modal" href="#">
-                            <button class="header__block-info__button">
-                                Получить
-                            </button>
+                        ><a href="#books" class="header__block-info__text"
+                            >Книги</a
+                        ><a href="#blog" class="header__block-info__text"
+                            >Блог</a
+                        >
+                        <a
+                            class="header__block-info__button"
+                            data-toggle="modal"
+                        >
+                            Получить
                         </a>
                     </div>
                     <div class="plate">
@@ -75,24 +88,19 @@
             <div class="header__mobile">
                 <nav class="header__menu">
                     <a
-                        href=""
+                        href="#recommendation"
                         class="header__menu-item header__block-info__text"
                         >Рекомендации</a
                     >
                     <a
-                        href=""
+                        href="#books"
                         class="header__menu-item header__block-info__text"
                         >Книги</a
                     >
                     <a
-                        href=""
+                        href="#blog"
                         class="header__menu-item header__block-info__text"
                         >Блог</a
-                    >
-                    <a href="#"
-                        ><button class="header__block-info__button">
-                            Получить
-                        </button></a
                     >
                 </nav>
             </div>
@@ -116,31 +124,33 @@
                             ценообразования на творческую работу.
                         </span>
                         <div class="book__button">
-                            <a href="#"
-                                ><button class="book__button__buy">
-                                    Купить сейчас
-                                </button></a
+                            <button
+                                data-toggle="modal"
+                                class="book__button__buy"
                             >
-                            <a href="#"
-                                ><button class="book__button__read">
-                                    Читать демо
-                                </button></a
-                            >
+                                Купить сейчас
+                            </button>
+                            <a class="book__button__read" href="#">
+                                Читать демо
+                            </a>
                         </div>
                     </div>
-                    <img
-                        src="./img/book.jpg"
-                        alt="Image: Book"
-                        class="book__image"
-                    />
+                    <div class="book__wrapper">
+                        <img
+                            src="./img/book.jpg"
+                            alt="Image: Book"
+                            class="book__image"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="recommendation">
+
+        <section class="recommendation" id="recommendation">
             <div class="container">
                 <div class="recommendation__block">
                     <div class="recommendation__books">
-                        <span class="recommendation__title">Рекомендации</span>
+                        <h2 class="recommendation__title">Рекомендации</h2>
                         <div class="recommendation__cards">
                             <div class="recommendation__card">
                                 <img
@@ -157,13 +167,12 @@
                                     </p>
                                     <p class="recommendation__price">$25.00</p>
                                     <div class="recommendation__button">
-                                        <a href="#"
-                                            ><button
-                                                class="recommendation__buy"
-                                            >
-                                                Купить
-                                            </button></a
+                                        <button
+                                            data-toggle="modal"
+                                            class="recommendation__buy"
                                         >
+                                            Купить
+                                        </button>
                                         <img
                                             src="./img/heart.svg"
                                             alt="Icon: Like"
@@ -188,13 +197,12 @@
                                     </p>
                                     <p class="recommendation__price">$28.00</p>
                                     <div class="recommendation__button">
-                                        <a href="#"
-                                            ><button
-                                                class="recommendation__buy"
-                                            >
-                                                Купить
-                                            </button></a
+                                        <button
+                                            data-toggle="modal"
+                                            class="recommendation__buy"
                                         >
+                                            Купить
+                                        </button>
                                         <img
                                             src="./img/heart.svg"
                                             alt="Icon: Like"
@@ -216,13 +224,12 @@
                                     <p class="recommendation__type">Novel</p>
                                     <p class="recommendation__price">$19.50</p>
                                     <div class="recommendation__button">
-                                        <a href="#"
-                                            ><button
-                                                class="recommendation__buy"
-                                            >
-                                                Купить
-                                            </button></a
+                                        <button
+                                            data-toggle="modal"
+                                            class="recommendation__buy"
                                         >
+                                            Купить
+                                        </button>
                                         <img
                                             src="./img/heart.svg"
                                             alt="Icon: Like"
@@ -245,13 +252,12 @@
                                     <p class="recommendation__type">Novel</p>
                                     <p class="recommendation__price">$20.00</p>
                                     <div class="recommendation__button">
-                                        <a href="#"
-                                            ><button
-                                                class="recommendation__buy"
-                                            >
-                                                Купить
-                                            </button></a
+                                        <button
+                                            data-toggle="modal"
+                                            class="recommendation__buy"
                                         >
+                                            Купить
+                                        </button>
                                         <img
                                             src="./img/heart.svg"
                                             alt="Icon: Like"
@@ -274,13 +280,12 @@
                                     <p class="recommendation__type">Business</p>
                                     <p class="recommendation__price">$23.00</p>
                                     <div class="recommendation__button">
-                                        <a href="#"
-                                            ><button
-                                                class="recommendation__buy"
-                                            >
-                                                Купить
-                                            </button></a
+                                        <button
+                                            data-toggle="modal"
+                                            class="recommendation__buy"
                                         >
+                                            Купить
+                                        </button>
                                         <img
                                             src="./img/heart.svg"
                                             alt="Icon: Like"
@@ -305,13 +310,12 @@
                                     </p>
                                     <p class="recommendation__price">$23.00</p>
                                     <div class="recommendation__button">
-                                        <a href="#"
-                                            ><button
-                                                class="recommendation__buy"
-                                            >
-                                                Купить
-                                            </button></a
+                                        <button
+                                            data-toggle="modal"
+                                            class="recommendation__buy"
                                         >
+                                            Купить
+                                        </button>
                                         <img
                                             src="./img/heart.svg"
                                             alt="Icon: Like"
@@ -321,10 +325,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
-                            <button class="recommendation__btn">
-                                Больше рекомендаций
-                            </button>
+                        <a class="recommendation__btn" href="#">
+                            Больше рекомендаций
                         </a>
                     </div>
                     <div class="recommendation__top">
@@ -350,13 +352,13 @@
                                     <p class="recommendation__top__price">
                                         $23.00
                                     </p>
-                                    <a href="#"
-                                        ><button
-                                            class="recommendation__top__buy"
-                                        >
-                                            Купить
-                                        </button></a
+
+                                    <button
+                                        data-toggle="modal"
+                                        class="recommendation__top__buy"
                                     >
+                                        Купить
+                                    </button>
                                 </div>
                             </div>
                             <div class="recommendation__cards__top">
@@ -373,13 +375,13 @@
                                     <p class="recommendation__top__price">
                                         $23.00
                                     </p>
-                                    <a href="#"
-                                        ><button
-                                            class="recommendation__top__buy"
-                                        >
-                                            Купить
-                                        </button></a
+
+                                    <button
+                                        data-toggle="modal"
+                                        class="recommendation__top__buy"
                                     >
+                                        Купить
+                                    </button>
                                 </div>
                             </div>
                             <div class="recommendation__cards__top">
@@ -396,13 +398,13 @@
                                     <p class="recommendation__top__price">
                                         $23.00
                                     </p>
-                                    <a href="#"
-                                        ><button
-                                            class="recommendation__top__buy"
-                                        >
-                                            Купить
-                                        </button></a
+
+                                    <button
+                                        data-toggle="modal"
+                                        class="recommendation__top__buy"
                                     >
+                                        Купить
+                                    </button>
                                 </div>
                             </div>
                             <div class="recommendation__cards__top">
@@ -419,13 +421,13 @@
                                     <p class="recommendation__top__price">
                                         $23.00
                                     </p>
-                                    <a href="#"
-                                        ><button
-                                            class="recommendation__top__buy"
-                                        >
-                                            Купить
-                                        </button></a
+
+                                    <button
+                                        data-toggle="modal"
+                                        class="recommendation__top__buy"
                                     >
+                                        Купить
+                                    </button>
                                 </div>
                             </div>
                             <div class="recommendation__line"></div>
@@ -455,7 +457,7 @@
                                 alt="Icon: Бизнес"
                                 class="slide__image"
                             />
-                            <span class="slide__title">Бизнес & Финансы</span>
+                            <h2 class="slide__title">Бизнес & Финансы</h2>
                             <span class="slide__description"
                                 >Книги про мир бизнеса</span
                             >
@@ -583,27 +585,27 @@
                     <div>
                         <div class="slide__card">
                             <img
-                                src="./img/slide1.svg"
-                                alt="Icon: Бизнес"
+                                src="./img/slide3.svg"
+                                alt="Icon: Романы"
                                 class="slide__image"
                             />
-                            <span class="slide__title">Бизнес & Финансы</span>
+                            <span class="slide__title">Романы Теленовеллы</span>
                             <span class="slide__description"
-                                >Книги про мир бизнеса</span
+                                >Книги с крутыми историями</span
                             >
                         </div>
                     </div>
                     <div>
                         <div class="slide__card">
                             <img
-                                src="img/slide2.svg"
-                                alt="Icon: Самомотивация"
+                                src="./img/slide4.svg"
+                                alt="Icon: Навыки"
                                 class="slide__image"
                             />
-                            <span class="slide__title">Самомотиватия</span>
+                            <span class="slide__title">Навыки будущего</span>
                             <span class="slide__description"
-                                >Книги о мотивации</span
-                            >
+                                >Книги для самоподготовки
+                            </span>
                         </div>
                     </div>
                     <div>
@@ -713,10 +715,10 @@
                 </div>
             </div>
         </section>
-        <section class="unpublished">
+        <section class="unpublished" id="books">
             <div class="container">
                 <div class="unpublished__block">
-                    <div class="unpublished__title">Неизданные книги</div>
+                    <h2 class="unpublished__title">Неизданные книги</h2>
                     <div class="unpublished__buttons">
                         <div
                             class="unpublished__button unpublished__button-prev"
@@ -814,7 +816,7 @@
         <section class="author">
             <div class="author__container">
                 <div class="author__info">
-                    <div class="author__title">История Автора</div>
+                    <h2 class="author__title">История Автора</h2>
                     <div class="author__description">
                         Это раздел авторского рассказа. Каждую неделю мы
                         стараемся рассказать вам историю писателя. Расскажем
@@ -922,9 +924,9 @@
         </section>
         <section class="partners">
             <div class="container">
-                <div class="partners__title">
+                <h2 class="partners__title">
                     Некоторые из издателей, с которыми мы сотрудничали
-                </div>
+                </h2>
                 <div class="partners__icon">
                     <img
                         src="./img/slack.svg"
@@ -978,13 +980,11 @@
                 </div>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="container">
                 <div class="blog__info">
-                    <div class="blog__title">Ehya Блог</div>
-                    <a href="#"
-                        ><button class="blog__button">Все Блоги</button></a
-                    >
+                    <h2 class="blog__title">Ehya Блог</h2>
+                    <a class="blog__button" href="#">Все Блоги</a>
                 </div>
                 <div class="blog__news">
                     <div class="blog__success">
@@ -1065,8 +1065,8 @@
                 <div class="newsletter-wrapper">
                     <form
                         class="form newsletter__subscribe"
-                        action="#"
-                        method="post"
+                        action="send.php"
+                        method="POST"
                     >
                         <h2 class="newsletter__title">
                             Будь первым, кто узнает о наших акциях
@@ -1184,37 +1184,45 @@
                 </div>
             </div>
         </footer>
+
         <div class="modal">
             <div class="modal__overlay"></div>
             <div class="modal__dialog">
-                <!-- <a href="#" class="modal__close">
+                <a class="modal__close">
                     <img src="./img/close.png" alt="Icon: Close" />
-                </a> -->
-                <h3 class="modal__title modal__title--mb-3">Получить</h3>
+                </a>
+                <h3 class="modal__title">Получить</h3>
                 <form action="send.php" method="POST" class="modal__form form">
-                    <input
-                        type="text"
-                        name="name"
-                        class="input modal__input"
-                        placeholder="Ваше полное имя*"
-                        required
-                        minlength="2"
-                    /><input
-                        type="tel"
-                        name="phone"
-                        class="input modal__input"
-                        placeholder="Номер телефона*"
-                        required
-                        minlength="16"
-                        maxlength="16"
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        class="input modal__input"
-                        placeholder="Электронная почта*"
-                        required
-                    />
+                    <div class="modal__block-input">
+                        <input
+                            type="text"
+                            name="name"
+                            class="input modal__input"
+                            placeholder="Ваше полное имя*"
+                            required
+                            minlength="2"
+                        />
+                    </div>
+                    <div class="modal__block-input">
+                        <input
+                            type="tel"
+                            name="phone"
+                            class="input modal__input"
+                            placeholder="Номер телефона*"
+                            required
+                            minlength="10"
+                            maxlength="16"
+                        />
+                    </div>
+                    <div class="modal__block-input">
+                        <input
+                            type="email"
+                            name="email"
+                            class="input modal__input"
+                            placeholder="Электронная почта*"
+                            required
+                        />
+                    </div>
                     <textarea
                         name="message"
                         class="message modal__message"
@@ -1229,11 +1237,10 @@
                 </form>
             </div>
         </div>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/slick.min.js"></script>
     </body>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script
-        type="text/javascript"
-        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
 </html>

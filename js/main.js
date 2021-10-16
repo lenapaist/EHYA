@@ -1,5 +1,6 @@
 $(document).ready(function () {
     const menuButton = $(".plate");
+    const menuItemButton = $(".header__menu-item");
     const body = $("body");
     const prevArrow = $(".slider__button-prev");
     const nextArrow = $(".slider__button-next");
@@ -8,7 +9,12 @@ $(document).ready(function () {
     menuButton.on("click", function () {
         this.classList.toggle("active");
         $(".header__mobile").toggleClass("header__mobile--visible");
-        $("body").toggleClass("hidden-scroll");
+        body.toggleClass("hidden-scroll");
+    });
+    menuItemButton.on("click", function () {
+        menuButton.removeClass("active");
+        $(".header__mobile").removeClass("header__mobile--visible");
+        body.removeClass("hidden-scroll");
     });
     $(".recommendation__button img").on("click", function (e) {
         if ($(this).attr("src") === "./img/heart.svg") {
@@ -16,6 +22,22 @@ $(document).ready(function () {
         } else {
             $(this).attr("src", "./img/heart.svg");
         }
+    });
+    $(".favorites").on("click", function (e) {
+        if ($(this).attr("src") === "./img/favorites.svg") {
+            $(this).attr("src", "./img/favorites-visited.png");
+        } else {
+            $(this).attr("src", "./img/favorites.svg");
+        }
+    });
+    $('a[href^="#"]').click(function () {
+        let anchor = $(this).attr("href");
+        $("html, body").animate(
+            {
+                scrollTop: $(anchor).offset().top,
+            },
+            600,
+        );
     });
     $(".carousel").slick({
         slidesToShow: 4,
@@ -159,9 +181,12 @@ $(document).ready(function () {
 
     const modalOverlay = $(".modal__overlay");
     const modalDialog = $(".modal__dialog");
+    modalOverlay.on("click", closeModal);
+
     const form = $(".form");
 
-    function openModal() {
+    function openModal(event) {
+        event.preventDefault();
         modalOverlay.addClass("modal__overlay--visible");
         modalDialog.addClass("modal__dialog--visible");
         $("body").addClass("hidden-scroll");
@@ -181,24 +206,39 @@ $(document).ready(function () {
         }
     });
     // Обработка форм
-    // form.each(function () {
-    //     $(this).validate({
-    //         errorClass: "invalid",
-    //         messages: {
-    //             name: {
-    //                 required: "Please specify your name",
-    //                 minlength: "Name must be at least 2 letters long",
-    //             },
-    //             email: {
-    //                 required: "We need your email address to contact you",
-    //                 email: "Your email address must be in the format of name@domain.com",
-    //             },
-    //             phone: {
-    //                 required: "Phone is required",
-    //                 minlength: "You must enter 10 digits of the number",
-    //             },
-    //         },
-    //     });
-    // });
-    // $("input[name*='phone']").mask("+7(999) 999-9999");
+    form.each(function () {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Пожалуйста, укажите ваше имя",
+                    minlength: "Имя должно быть не короче 2 букв.",
+                },
+                email: {
+                    required:
+                        "Нам нужен ваш адрес электронной почты, чтобы с вами связаться",
+                    email: "Ваш адрес электронной почты должен быть в формате name@domain.com.",
+                },
+                phone: {
+                    required: "Телефон обязателен",
+                    minlength: "Вы должны ввести 10 цифр номера",
+                },
+            },
+        });
+    });
+    $("input[name*='phone']").mask("+7(999) 999-9999");
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $(".toTop").fadeIn();
+            } else {
+                $(".toTop").fadeOut();
+            }
+        });
+
+        $(".toTop").click(function () {
+            $("body,html").animate({ scrollTop: 0 }, 800);
+        });
+    });
 });

@@ -1,3 +1,94 @@
+@media (min-width: 992px)
+  .header
+    &__block
+      &-info
+        &__text
+          position: relative
+          &:before
+            content:""
+            position: absolute
+            bottom: -5px
+            max-width: 100%
+            height: 2px
+            background-color: $btn-color
+            width: 0
+            transition: 0.3s
+          &:hover
+            &:before
+              width: 100%
+        &__button
+          &:hover
+            transform: scale(1.05)
+            background-color: $btn-color
+            color: $bcr-color
+            transition: 0.3s
+  .book
+    &__button
+      &__buy
+        transition: 0.3s
+        &:hover
+          background-color: #1565d8ab
+      &__read
+        transition: 0.3s
+        &:hover
+          transform: scale(1.05)
+          background-color: $btn-color
+          color: $bcr-color
+  .recommendation
+    &__buy
+      transition: 0.3s
+      &:hover
+        transform: scale(1.05)
+        background-color: $btn-color
+        color: $bcr-color
+    &__top
+      &__buy
+        transition: 0.3s
+        &:hover
+          transform: scale(1.05)
+          background-color: $btn-color
+          color: $bcr-color
+    &__btn
+      transition: 0.3s
+      &:hover
+        background: $bcr-color
+        color: $btn-color
+        box-shadow: inset 0 0 0 1px $btn-color
+    &__yet
+      &-link 
+        &:hover
+          text-decoration: underline
+          color: $btn-color
+  .blog
+    &__button
+      transition: 0.3s
+      &:hover
+        transform: scale(1.05)
+        background-color: $btn-color
+        color: $bcr-color
+    &__data
+      &__read
+        &:hover
+          text-decoration: underline
+          color: $btn-color
+  .newsletter
+    &__button
+      transition: 0.3s
+      &:hover
+        opacity: 0.7
+      &:active
+        background-color: $btn-color
+  .slider,.unpublished
+    &__button
+      &-prev,&-next
+        transition: 0.3s
+        &:hover
+          transform: scale(1.1)
+
+
+
+
+
 @media (min-width: 768px)
   .plate
     display: none
@@ -30,12 +121,20 @@
   .container
     max-width: 960px
   .book
+    &__text
+      margin-bottom: 15px
     &__info
       margin-right: 30px
-    &__image
-      max-width: 400px
     &__title
       margin-top: 0
+    &__button
+      display: flex
+      flex-direction: column
+      &__buy
+        margin-bottom: 15px
+      &__read
+        max-width: 421px
+        text-align: center
   .recommendation
     &__block
       display: flex
@@ -146,6 +245,8 @@
       margin-right: 0
     &__button
       margin-bottom: 36px
+      &__read
+        max-width: 559px
   .recommendation
     &__btn
       text-transform: capitalize
@@ -234,8 +335,11 @@
         margin-bottom: 10px
   .book
     margin-bottom: 58px
+    &__button
+      &__read
+        max-width: 534px
   .recommendation
-    margin-bottom: 56px
+    margin-bottom: 97px
     &__title
       margin-bottom: 72px
       font-size: 28px
@@ -342,6 +446,7 @@
         text-align: center
     &__container
       padding: 0 10px
+      
     &__title
       font-size: 28px
       line-height: 36px
@@ -430,68 +535,68 @@
       max-height: 350px
     &__button
       margin-bottom: 10px
-  .newsletter
-    &__icon
-      top: 26px
-    &__input
-      padding-bottom: 50px
-      padding-right: 20px
-    &__form
-      height: 112px
-      align-items: flex-end
-    &__button
-      position: relative
-      width: 100%
-      margin: 0 11px
-      margin-bottom: 12px
-      left: 0
-      right: 0
-    &__subscribe
-      align-items: flex-start
-      padding: 30px 20px
-    &__title
-      font-size: 28px
-      max-width: 188px
   .unpublished
+    padding-top: 43px
+    padding-bottom: 60px
+    margin-bottom: 41px
+    &__title
+      margin-bottom: 32px 
+    &__image
+      max-width: 236px
+      width: 100%
     &__block
       max-width: 222px
       margin: 0 auto
       padding-bottom: 60px
       .slick
         &-list
-          margin-left: 7px
+          margin-left: -7px
           margin-right: 0
     &__buttons
-      top: 88%
-      right: 47px
+      top: 92%
+      right: 53px
+      max-width: 115px
+    &__button
+      width: 48px
+      height: 48px
     &__title
       font-size: 28px
       linegin-bottom: 31px
-    &__image
-      max-width: 205px
-      width: 100%
+  .blog
+    &__info
+      margin-bottom: 30px 
   .container
     padding: 0 20px
-  .header
-    margin-bottom: 11px
   .logo
     margin: 20px 0
   .book
+    &__info
+      margin-right: -15px
     &__title
       font-size: 32px
       line-height: 40px
       margin-bottom: 24px
+      margin-left: -6px
       &-yellow
         font-size: 32px
         line-height: 40px
     &__author
       font-size: 16px
       line-height: 24px
-      margin-bottom: 32px
+      margin-bottom: 34px
+      margin-left: -17px
     &__text
       font-size: 16px
       line-height: 23px
       margin-bottom: 17px
+      margin-left: -7px
+    &__wrapper
+      max-width: 280px
+      width: 100%
+      height: 332px
+    &__image
+      max-width: 143px
+      width: 100%
     &__button
       display: flex
       flex-direction: column
@@ -506,15 +611,59 @@
         padding: 7px 27px
         font-size: 16px
         line-height: 22px
+  .recommendation
+    &__cards
+      margin-bottom: 30px
+  .slider
+    &__button
+      &-next, &-prev
+        bottom: -86px
+      &-next
+        right: 32%
+      &-prev
+        left: 33%
+  .slide
+    &-adaptive
+      margin-top: -21px 
+      margin-bottom: 143px
+    &__title
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      max-width: 105px
+      text-align: center
+    &__description
+      font-size: 12px
+      line-height: 20px
+    .slick
+      &-list
+        margin-right: 0
   .author
+    margin-bottom: 71px
+    &__container
+      padding: 0
+      max-width: 93%
+    &__description
+      max-width: 280px
+      margin-bottom: 19px
     &__video
       &-next
         margin-bottom: 16px
       &__title
         margin-bottom: 6px
     &-desc
-      margin-bottom: 16px
+      margin-bottom: 0
+  .video
+    &-big
+      min-height: 209px
+      margin-bottom: -9px
+    &-play
+      left: 41%
   .partners
+    padding: 38px 7px 57px 0px
+    margin-bottom: 54px
     &__title
       font-size: 24px
       line-height: 30px
@@ -524,22 +673,151 @@
   .slack
     max-width: 99px
     margin-bottom: 22px
+    margin-left: 19px
   .netflix
     max-width: 86px
     margin-bottom: 23px
+    margin-right: 18px
   .fitbit
     max-width: 87px
-    margin-bottom: 22px
-    margin-left: 0
+    margin-bottom: 45px
+    margin-left: 22px
+    margin-top: 3px
   .google
     max-width: 86px
-    margin-bottom: 21px
+    margin-top: -36px
+    margin-right: 14px
   .airbnb
-    max-width: 86px
+    max-width: 88px
+    margin-top: -20px
+    margin-left: 20px
   .uber
     max-width: 86px
+    margin-top: -14px
+    margin-right: 12px
+  .header
+    margin-top: -2px
+    margin-bottom: 15px
+  .plate
+    margin-right: -9px
+  .blog
+    margin-bottom: 50px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__news
+      text-align: left
+      margin-bottom: -20px
+    &__button
+      padding: 10px 43px
+    &__success 
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin-left: -11px
+        margin-bottom: 12px
+      &__desc
+        font-size: 12px
+        line-height: 24px
+        text-align: left
+        margin-left: -10px
+        margin-bottom: -24px
+    &__data
+      &__info
+        left: 0
+      &__when
+        font-size: 10px
+        line-height: 20px
+        margin-top: 10px
+        margin-bottom: 6px
+      &__title
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 5px
+      &__read
+        font-size: 10px
+        line-height: 20px
+      &__image
+        margin-top: 9px
+      &__card
+        margin-bottom: 19px
+  .newsletter
+    margin-bottom: 47px
+    .invalid
+      bottom: -27px
+      max-width: 440px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      min-height: 114px
+      max-width: 188px
+    &__icon
+      top: 26px
+    &__input
+      padding-bottom: 50px
+      padding-right: 20px
+      margin-left: 4px
+    &__form
+      height: 112px
+      align-items: flex-end
+    &__button
+      position: relative
+      width: 100%
+      margin: 0 11px
+      margin-bottom: 12px
+      left: 0
+      right: 0
+      height: 37px
+    &__subscribe
+      align-items: flex-start
+      padding: 30px 20px
+  .footer
+    &__block
+      display: flex
+      margin-right: 0
+      margin-bottom: 24px
+      max-width: 133px
+      &:first-child
+        margin-top: 6px
+        margin-left: 9px
+      &:nth-child(5)
+        justify-content: flex-start
+        .footer__title
+          margin-bottom: 19px
+      &-width
+        display: flex
+        align-items: center
+        max-width: 100%
+    &-wrapper
+      justify-content: space-between
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__text
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &__desc
+      text-align: center
+      margin-bottom: 14px
+    &__logo
+      margin-bottom: 10px
+
+
+@media (max-width: 340px)
+  .book
+    &__title
+      max-width: 290px
+  .blog
+    &__success
+      &__image
+        min-height: 118px
+        height: 118px
+        margin-bottom: 18px
+      
+@media (max-width: 320px)
   
 
-  
-@media (max-width: 387px)
+
   

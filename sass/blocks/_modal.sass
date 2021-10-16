@@ -1,4 +1,10 @@
 .modal
+  &__block
+    &-input
+      display: flex
+      flex-direction: column
+      width: 100%
+      min-height: 70px
   &__overlay
     position: fixed
     left: 0
@@ -17,9 +23,9 @@
     position: fixed
     top: 50%
     left: 50%
-    max-width: 478px
+    max-width: 500px
     width:100%
-    padding: 33px 88px
+    padding: 13px 88px
     background-color: $bcr-color
     transform: translate(-50%, -50%)
     color: $light
@@ -29,7 +35,7 @@
     opacity: 0
     transition: opacity 0.2s 
     overflow-y: auto
-    max-height: 100%
+    max-height: 500px
     &--visible
       visibility: visible
       opacity: 1
@@ -47,26 +53,70 @@
     justify-content: space-between
     flex-wrap: wrap
   &__title
+    font-family: Roboto
     font-style: normal
-    font-weight: bold
-    font-size: 18px
-    line-height: 23px
-    margin-bottom: 15px
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
     text-transform: uppercase
     white-space: nowrap
     text-align: center
     color: $title-color
   &__input
     width: 100%
-    margin-top: 15px
+    padding: 10px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184
+    border-radius: 8px
+    border: 1px solid #5A7184
   &__message
     width: 100%
+    padding: 10px
     margin-top: 15px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: #5A7184
+    border-radius: 8px
+    border: 1px solid #5A7184
+    resize: none
   &__button
     margin-top: 15px
+    border: 2px solid $btn-color
+    border-radius: 8px
+    padding: 11px 32px
+    background-color: $bcr-color
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $btn-color
+    cursor: pointer
   &__info
+    font-family: Open Sans
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $footer-text-info
+  &__close
+    position: absolute
+    display: block
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+    background-size: cover
+    img
+      max-width: 100%
+      max-height: 100%
+
+.message
+  min-height: 100px
