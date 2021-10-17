@@ -32,7 +32,10 @@
                             >Рекомендации</a
                         ><a href="#" class="header__block-info__text">Книги</a
                         ><a href="#" class="header__block-info__text">Блог</a>
-                        <button class="header__block-info__button">
+                        <button
+                            data-toggle="modal"
+                            class="header__block-info__button"
+                        >
                             Получить
                         </button>
                     </div>
@@ -87,7 +90,12 @@
                         class="header__menu-item header__block-info__text"
                         >Блог</a
                     >
-                    <button class="header__block-info__button">Получить</button>
+                    <button
+                        data-toggle="modal"
+                        class="header__block-info__button"
+                    >
+                        Получить
+                    </button>
                 </nav>
             </div>
         </header>
@@ -101,7 +109,9 @@
                             alt=""
                         />
                     </div>
-                    <a href="./index.html" class="join-us-btn">Назад</a>
+                    <h2>
+                        <a href="./index.html" class="join-us-btn">Назад</a>
+                    </h2>
                 </div>
             </div>
         </section>
@@ -201,5 +211,62 @@
                 </div>
             </div>
         </footer>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog">
+                <a class="modal__close">
+                    <img src="./img/close.png" alt="Icon: Close" />
+                </a>
+                <h3 class="modal__title">Получить</h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <div class="modal__block-input">
+                        <input
+                            type="text"
+                            name="name"
+                            class="input modal__input"
+                            placeholder="Ваше полное имя*"
+                            required
+                            minlength="2"
+                        />
+                    </div>
+                    <div class="modal__block-input">
+                        <input
+                            type="tel"
+                            name="phone"
+                            class="input modal__input"
+                            placeholder="Номер телефона*"
+                            required
+                            minlength="10"
+                            maxlength="16"
+                        />
+                    </div>
+                    <div class="modal__block-input">
+                        <input
+                            type="email"
+                            name="email"
+                            class="input modal__input"
+                            placeholder="Электронная почта*"
+                            required
+                        />
+                    </div>
+                    <textarea
+                        name="message"
+                        class="message modal__message"
+                        placeholder="Комментарий"
+                    ></textarea>
+                    <div class="modal__form-block">
+                        <button type="submit" class="button modal__button">
+                            Отправить
+                        </button>
+                        <span class="modal__info">*Обязательные поля</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/slick.min.js"></script>
     </body>
 </html>

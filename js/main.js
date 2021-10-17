@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const menuButton = $(".plate");
     const menuItemButton = $(".header__menu-item");
-    const body = $("body");
+    const body = $("html");
     const prevArrow = $(".slider__button-prev");
     const nextArrow = $(".slider__button-next");
     const unpublishedPrev = $(".unpublished__button-prev");
@@ -185,20 +185,20 @@ $(document).ready(function () {
         event.preventDefault();
         modalOverlay.addClass("modal__overlay--visible");
         modalDialog.addClass("modal__dialog--visible");
-        $("body").addClass("hidden-scroll");
+        body.addClass("hidden-scroll");
     }
 
     function closeModal(event) {
         event.preventDefault();
         modalOverlay.removeClass("modal__overlay--visible");
         modalDialog.removeClass("modal__dialog--visible");
-        $("body").removeClass("hidden-scroll");
+        body.removeClass("hidden-scroll");
     }
     document.addEventListener("keydown", (event) => {
         if (event.code === "Escape") {
             modalOverlay.removeClass("modal__overlay--visible");
             modalDialog.removeClass("modal__dialog--visible");
-            $("body").removeClass("hidden-scroll");
+            body.removeClass("hidden-scroll");
         }
     });
     window.addEventListener("resize", (event) => {
