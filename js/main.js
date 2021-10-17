@@ -192,13 +192,17 @@ $(document).ready(function () {
         event.preventDefault();
         modalOverlay.removeClass("modal__overlay--visible");
         modalDialog.removeClass("modal__dialog--visible");
-        body.removeClass("hidden-scroll");
+        if (!menuButton.attr("class").includes("active")) {
+            body.removeClass("hidden-scroll");
+        }
     }
     document.addEventListener("keydown", (event) => {
         if (event.code === "Escape") {
             modalOverlay.removeClass("modal__overlay--visible");
             modalDialog.removeClass("modal__dialog--visible");
-            body.removeClass("hidden-scroll");
+            if (!menuButton.attr("class").includes("active")) {
+                body.removeClass("hidden-scroll");
+            }
         }
     });
     window.addEventListener("resize", (event) => {
