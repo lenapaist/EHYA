@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
     $(".unpublished__books").slick({
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         infinite: false,
         prevArrow: unpublishedPrev,
         nextArrow: unpublishedNext,
@@ -98,28 +98,24 @@ $(document).ready(function () {
                 breakpoint: 1164,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4,
                 },
             },
             {
                 breakpoint: 1026,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
                 },
             },
             {
                 breakpoint: 783,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
                 },
             },
         ],
