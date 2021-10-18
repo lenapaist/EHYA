@@ -217,8 +217,11 @@
       display: none
     &__block
       justify-content: space-between
+      margin-right: 18px
       &:first-child
         margin-right: 0
+      &:nth-child(5)
+        justify-content: flex-start
       &-width
         align-self: center
         order: 5
@@ -267,6 +270,13 @@
   .card
     max-width: 140px
   .author
+    &__video
+      &__block
+        max-width: 48%
+        width: 100%
+      &-next
+        max-width: 100%
+
     &__container
       max-width: 720px
     &__info
@@ -278,6 +288,17 @@
     &__description
       text-align: center
       margin-bottom: 35px
+  .video
+    &-small
+      width: 100%
+  .partners
+    &__icon
+      padding-left: 72px
+      justify-content: space-between
+    &__block
+      padding: 0
+      justify-content: flex-start
+  
 
 @media (max-width: 768px)
   .unpublished
@@ -485,22 +506,12 @@
     width: 10px
     height: 14px
   .partners
-    &__image
-      margin: 0
-      &:nth-child(odd)
-        margin-right: 30px
+    &__icon
+      padding-left: 80px
+      justify-content: space-evenly
+    &__block
       &:nth-child(n+7)
         display: none
-  .airbnb
-    margin-top: 20px
-  .uber
-    margin-top: 20px
-  .google
-    margin-top: 23px
-  .fitbit
-    margin-left: 60px
-  .netflix
-    margin-right: 10px
   .blog
     position: relative
     padding-bottom: 81px
@@ -522,6 +533,11 @@
       a
         position: absolute
         bottom: 0
+  .footer
+    &__block
+      min-width: 50%
+      margin-right: 0
+      align-items: center
 
 @media (max-width: 645px)
   .slide
@@ -699,32 +715,8 @@
       line-height: 30px
       margin-bottom: 29px
     &__icon
-      padding-left: 0
-  .slack
-    max-width: 99px
-    margin-bottom: 22px
-    margin-left: 19px
-  .netflix
-    max-width: 86px
-    margin-bottom: 23px
-    margin-right: 18px
-  .fitbit
-    max-width: 87px
-    margin-bottom: 45px
-    margin-left: 22px
-    margin-top: 3px
-  .google
-    max-width: 86px
-    margin-top: -36px
-    margin-right: 14px
-  .airbnb
-    max-width: 88px
-    margin-top: -20px
-    margin-left: 20px
-  .uber
-    max-width: 86px
-    margin-top: -14px
-    margin-right: 12px
+      padding-left: 90px
+      
   .header
     margin-top: -2px
     margin-bottom: 15px
@@ -805,15 +797,72 @@
     &__subscribe
       align-items: flex-start
       padding: 30px 20px
+
+
+@media (max-width: 485px)
+  .book
+    &__title
+      max-width: 290px
+  .blog
+    &__success
+      &__image
+        min-height: 118px
+        height: 118px
+        margin-bottom: 14px
+  .modal
+    &__dialog
+      padding: 18px 23px 
+    &__block
+      &-input
+        min-height: 64px
+    &__message
+      margin-top: 8px
+  .invalid
+    font-size: 10px
+  .partners
+    padding: 38px 7px 38px 0px
+    &__icon
+      padding-left: 0
+    &__block
+      width: 136px
+      height: 50px
+      transform: scale(0.9)
+      &:first-child
+        padding-bottom: 24px
+        padding-right: 0
+        padding-left: 24px
+      &:nth-child(2)
+        padding-bottom: 24px
+        padding-right: 0
+        padding-left: 19px
+      &:nth-child(3)
+        padding-bottom: 20px
+        padding-right: 0
+        padding-left: 30px
+      &:nth-child(4)
+        padding-bottom: 17px
+        padding-right: 0
+        padding-left: 19px
+      &:nth-child(5)
+        padding-bottom: 17px
+        padding-right: 0
+        padding-left: 30px
+      &:nth-child(6)
+        padding-bottom: 17px
+        padding-right: 0
+        padding-left: 19px
   .footer
     &__block
       display: flex
       margin-right: 0
       margin-bottom: 24px
       max-width: 133px
+      padding-left: 5px
+      align-items: flex-start
       &:first-child
         margin-top: 6px
         margin-left: 9px
+        padding-left: 0
       &:nth-child(5)
         justify-content: flex-start
         .footer__title
@@ -839,28 +888,8 @@
       padding-top: 1px
     &__logo
       margin-bottom: 10px
-
-
-@media (max-width: 340px)
-  .book
-    &__title
-      max-width: 290px
-  .blog
-    &__success
-      &__image
-        min-height: 118px
-        height: 118px
-        margin-bottom: 14px
-  .modal
-    &__dialog
-      padding: 18px 23px 
-    &__block
-      &-input
-        min-height: 64px
-    &__message
-      margin-top: 8px
-  .invalid
-    font-size: 10px
+        
+        
 
 
   
