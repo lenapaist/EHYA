@@ -305,7 +305,7 @@
       max-height: 485px
   
 
-@media (max-width: 768px)
+@media (max-width: 769px)
   .unpublished
     &__block
       .slick 
@@ -457,6 +457,15 @@
   .slide
     border-top: none
     padding-top: 10px
+  .carousel
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      width: 100%
+      height: 1px
+      top: -40px
+      background-color: #eceef2
   .author
     &-desc
       display: flex
@@ -726,7 +735,8 @@
     margin-top: -2px
     margin-bottom: 15px
   .plate
-    margin-right: -9px
+    margin-right: -14px
+    margin-top: -5px
   .blog
     margin-bottom: 50px
     &__title
@@ -805,9 +815,6 @@
 
 
 @media (max-width: 485px)
-  .book
-    &__title
-      max-width: 290px
   .blog
     &__success
       &__image
@@ -893,7 +900,10 @@
       padding-top: 1px
     &__logo
       margin-bottom: 10px
-        
+@media (max-width: 321px)
+  .book
+    &__title
+      max-width: 290px
         
 
 
